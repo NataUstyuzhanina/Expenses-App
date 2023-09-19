@@ -42,12 +42,12 @@ function getExpenseFromUser () {
 
     const expense = parseInt(addExpenseNode.value);
 
-    clearInput;
+   clearInput();
 
     return expense;
 };
 
-function clearInput() {
+function clearInput () {
     addExpenseNode = " ";
 };
 
@@ -68,7 +68,7 @@ function render(expenses) {
         expensesListHTML += `<li>${element} ${CURRENCY}</li>`;
     });
 
-    historyNode.innerText = `<ol>${expensesListHTML}</ol>`;
+    historyNode.innerHTML = `<ol>${expensesListHTML}</ol>`;
 };
 
 function renderSum(sum) {
