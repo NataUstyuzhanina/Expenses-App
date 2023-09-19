@@ -61,7 +61,14 @@ function calculateExpenses(expenses) {
     return sum;
 };
 
-function render(expenses) {
+function render(expense) {
+    const sum = calculateExpenses(expenses);
+    renderHistory(expense);
+    renderSum(sum);
+    renderStatus(sum);
+};
+
+function renderHistory(expenses) {
     let expensesListHTML = " ";
 
     expenses.forEach (element => {
