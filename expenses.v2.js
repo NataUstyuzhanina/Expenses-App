@@ -48,7 +48,7 @@ function getExpenseFromUser () {
 };
 
 function clearInput () {
-    addExpenseNode = " ";
+    addExpenseNode.value = '';
 };
 
 function calculateExpenses(expenses) {
