@@ -1,17 +1,49 @@
-const expenses = [] ;
 
-const addExpense = document.getElementById('addExpense');
-const btnAddExpense = document.getElementById('btnAddExpense');
+// const LIMIT = 10000;
 
-btnAddExpense.addEventListener('click', function () {
-    if  (!addExpense.value) {
-        return;
-    }
+// const expenses = [] ;
 
-   const expense = parseInt(addExpense.value) ;
+// const addExpenseNode = document.getElementById('addExpense');
+// const btnAddExpenseNode = document.getElementById('btnAddExpense');
+// const historyNode = document.querySelector('.expenses-history');
+// const sumNode = document.querySelector('.expenses-sum');
+// const limitNode = document.querySelector('.expenses-limit');
+// const statusNode = document.querySelector('.expenses-status');
 
-   expenses.push(expense);
+// limitNode.innerText = LIMIT;
 
-   addExpense.value = '';
-   console.log (expenses);
-})
+// btnAddExpenseNode.addEventListener('click', function () {
+//     if  (!addExpenseNode.value) {
+//         return;
+//     }
+
+//    const expense = parseFloat(addExpenseNode.value) ;
+
+//    addExpenseNode.value = '';
+
+//    expenses.push(expense);
+
+
+//     let expensesListHTML = ''; 
+//    expenses.forEach(element => {
+//     expensesListHTML += `<li>${element} руб.</li>`;
+//    })
+   
+//    historyNode.innerHTML = `<ol>${expensesListHTML}</ol>`;
+ 
+//    let sum = 0;
+
+//    expenses.forEach(element => {
+//     sum += element;
+//    });
+
+//    sumNode.innerText = sum;
+
+//    if (sum <= LIMIT) {
+//     statusNode.innerText = 'все хорошо';
+//    } else {
+//     statusNode.innerText = 'все плохо';
+//     statusNode.classList.add('status_red');
+//    }
+
+// });
