@@ -40,7 +40,7 @@ function getExpenseFromUser () {
         return null;
     }
 
-    const expense = parseInt(addExpenseNode.value);
+    const expense = parseFloat(addExpenseNode.value);
 
    clearInput();
 
